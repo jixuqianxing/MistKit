@@ -19,17 +19,17 @@ public let tokenEncoder: MKTokenEncoder?
 public let connection: MKDatabaseConnection
 ```
 
-### `webAuthenticationToken`
+### `tokenManager`
 
 ```swift
-public var webAuthenticationToken: String?
+public let tokenManager: MKTokenManagerProtocol?
 ```
 
 ## Methods
-### `init(tokenEncoder:connection:webAuthenticationToken:)`
+### `init(tokenEncoder:connection:tokenManager:)`
 
 ```swift
-public init(tokenEncoder: MKTokenEncoder?, connection: MKDatabaseConnection, webAuthenticationToken: String? = nil)
+public init(tokenEncoder: MKTokenEncoder?, connection: MKDatabaseConnection, tokenManager: MKTokenManagerProtocol? = nil)
 ```
 
 ### `url(withPathComponents:)`
